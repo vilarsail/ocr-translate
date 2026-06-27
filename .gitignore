@@ -1,0 +1,73 @@
+# ===== Python / backend =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 打包产物
+build/
+dist/
+*.egg
+*.egg-info/
+.eggs/
+wheels/
+sdist/
+
+# 测试 / 类型检查缓存
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+.tox/
+.nox/
+.hypothesis/
+
+# 日志
+*.log
+pip-log.txt
+backend/logs/
+backend/.server.pid
+
+# 环境变量 / 密钥
+.env
+.envrc
+.local_settings.py
+*.local
+nvidia_api.key
+
+# ===== Node / frontend =====
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+
+# ===== 项目运行时 =====
+# 每个项目的产物、原始 PDF、OCR 文本、章节 md 都不入库
+workspaces/
+
+# ===== 编辑器 / 系统 =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.~undo-tree~
+
+# Jupyter
+.ipynb_checkpoints/

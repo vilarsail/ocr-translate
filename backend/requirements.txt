@@ -1,0 +1,16 @@
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9
+openai>=1.30
+pydantic>=2.6
+websockets>=12.0
+pymupdf>=1.24
+
+# PaddleOCR backend dependencies (only needed when OCR_BACKEND=paddle).
+# paddlepaddle has no macOS arm64 wheel; gated to linux via env marker so
+# `pip install -r requirements.txt` works on the dev mac (glm backend)
+# and on the linux server (paddle backend).
+paddlepaddle>=3.0.0; sys_platform == "linux"
+paddleocr>=2.8; sys_platform == "linux"
+pillow>=10.0; sys_platform == "linux"
+numpy>=1.24; sys_platform == "linux"
